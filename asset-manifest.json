@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pokeapi-client/static/css/main.de9ee101.chunk.css",
+    "main.css": "/pokeapi-client/static/css/main.c8f1b9cc.chunk.css",
     "main.js": "/pokeapi-client/static/js/main.a49c20da.chunk.js",
     "main.js.map": "/pokeapi-client/static/js/main.a49c20da.chunk.js.map",
     "runtime-main.js": "/pokeapi-client/static/js/runtime-main.82d954ef.js",
@@ -9,16 +9,16 @@
     "static/js/2.59fdd037.chunk.js": "/pokeapi-client/static/js/2.59fdd037.chunk.js",
     "static/js/2.59fdd037.chunk.js.map": "/pokeapi-client/static/js/2.59fdd037.chunk.js.map",
     "index.html": "/pokeapi-client/index.html",
-    "precache-manifest.ae50801c7ce5c389955cdd9104c410e3.js": "/pokeapi-client/precache-manifest.ae50801c7ce5c389955cdd9104c410e3.js",
+    "precache-manifest.1b8598f80b04c0444ebc88002ae22e18.js": "/pokeapi-client/precache-manifest.1b8598f80b04c0444ebc88002ae22e18.js",
     "service-worker.js": "/pokeapi-client/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/pokeapi-client/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.de9ee101.chunk.css.map": "/pokeapi-client/static/css/main.de9ee101.chunk.css.map"
+    "static/css/main.c8f1b9cc.chunk.css.map": "/pokeapi-client/static/css/main.c8f1b9cc.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.82d954ef.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.59fdd037.chunk.js",
-    "static/css/main.de9ee101.chunk.css",
+    "static/css/main.c8f1b9cc.chunk.css",
     "static/js/main.a49c20da.chunk.js"
   ]
 }
