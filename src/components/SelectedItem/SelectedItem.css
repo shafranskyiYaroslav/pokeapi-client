@@ -1,0 +1,12 @@
+.selected-item-container {
+    height: auto;
+}
+
+table {
+    border: 2px solid black;
+    word-break: break-all;
+}
+
+td {
+    border: 1px solid black;
+}

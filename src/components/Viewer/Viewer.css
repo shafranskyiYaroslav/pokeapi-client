@@ -1,0 +1,14 @@
+h1 {
+    text-transform: uppercase;
+    font-family: 'Mansalva';
+    color: red;
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: -3px;
+    text-shadow: 3px 2px yellow;
+    border: 3px solid black;
+}
+
+button {
+    width: 98%;
+}
