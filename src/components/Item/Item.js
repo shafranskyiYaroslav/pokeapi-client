@@ -9,7 +9,11 @@ const Item = ({ name, image, types, onClick, id }) => {
     const typesSecondaryClass = types && className(types[1], 'item-types');
     
     return (
-        <div onClick={() => onClick(id)} className='container-fluid item-container'>
+        <div onClick={() => {
+            onClick(id)
+            window.scrollTo(0, 0)
+            }}
+            className='container-fluid item-container'>
             <img src={image} alt={name}/>
             <h5 className='item-name'>{name}</h5>
                 <div className={'types-container'}>

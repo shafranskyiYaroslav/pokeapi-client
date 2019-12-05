@@ -2,8 +2,9 @@
     border: 2px solid black;
     padding: 10px;
     margin: 10px;
-    background-color: red;
+    background-color: #b30000;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .item-container img {

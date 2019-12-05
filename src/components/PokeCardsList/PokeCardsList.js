@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { selectCard } from '../../store/actions/actions';
+import { selectCard, unselectCard } from '../../store/actions/actions';
 import { connect } from 'react-redux';
 import PokeCard from '../PokeCard/PokeCard';
 import SelectedCard from '../SelectedCard/SelectedCard';
@@ -61,4 +61,4 @@ const PokeCardsList = (props) => {
 
 const mapStateToProps = ({ selectedCardId, firstId, lastId }) => ({ selectedCardId, firstId, lastId })
 
-export default connect(mapStateToProps, { selectCard })(PokeCardsList)
+export default connect(mapStateToProps, { selectCard, unselectCard })(PokeCardsList)

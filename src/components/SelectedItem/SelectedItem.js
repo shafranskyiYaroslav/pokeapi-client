@@ -14,10 +14,11 @@ const SelectedItem = ({
     SPDefence,
     speed,
     weight,
-    moves }) => {
+    moves,
+    onClick }) => {
 
     return (
-        <div className='container-fluid item-container selected-item-container'>
+        <div className='container-fluid item-container selected-item-container' onClick={() => onClick(id)}>
             <img src={image} alt={name} />
             <h5>{name} #00{id}</h5>
             <div className='table-responsive fixed-table-body'>

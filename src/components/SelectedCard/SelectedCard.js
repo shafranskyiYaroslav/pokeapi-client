@@ -1,6 +1,8 @@
 import React from 'react';
 import { getPokemonPrimaryStat, getPokemonImage, getPokemponTypes, getPokemonStat, getPokemonMoves } from '../utils/utils';
 import SelectedItem from '../SelectedItem/SelectedItem';
+import { connect } from 'react-redux';
+import { unselectCard } from '../../store/actions/actions';
 
 const Pokedex = require('pokeapi-js-wrapper');
 const P = new Pokedex.Pokedex();
@@ -32,7 +34,7 @@ class SelectedCard extends React.Component {
 
     render() {
         const { pokedex } = this.state;
-        const { id } = this.props;
+        const { id, unselectCard } = this.props;
         const selectedItemProps = {
             pokedex,
             name: getPokemonPrimaryStat(pokedex, 'name'),
@@ -46,6 +48,7 @@ class SelectedCard extends React.Component {
             speed: getPokemonStat(pokedex, 'speed'),
             weight: getPokemonPrimaryStat(pokedex, 'weight'),
             moves: getPokemonMoves(pokedex),
+            onClick: unselectCard,
             id,
         }
         return (
@@ -60,4 +63,6 @@ class SelectedCard extends React.Component {
     
 }
 
-export default SelectedCard
+const mapStateToProps = ({ selectedCardId }) => ({ selectedCardId })
+
+export default connect(mapStateToProps, { unselectCard })(SelectedCard)

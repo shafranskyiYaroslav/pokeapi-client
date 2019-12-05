@@ -1,4 +1,5 @@
 {
+  "homepage" : "http://shafranskyiYaroslav.github.io/pokeapi-client",
   "name": "pokeapi-client",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,6 +34,7 @@
   "devDependencies": {
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.1.1",
     "pokeapi-js-wrapper": "^1.1.2",
     "react-getscreen": "^1.1.3",
     "react-redux": "^7.1.3",

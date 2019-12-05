@@ -23,7 +23,7 @@ class PokeCard extends React.Component {
             )
             .catch(() => {})
     }
-    
+
     componentDidMount() {
         this.getPokemonObject()
     }
