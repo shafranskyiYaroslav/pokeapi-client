@@ -1,11 +1,12 @@
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { SELECT_CARD, CHANGE_FIRST_ID, UNSELECT_CARD } from './actions/actions';
+import { SELECT_CARD, CHANGE_FIRST_ID, UNSELECT_CARD, FILTER_BY_TYPE } from './actions/actions';
 
 const initialState = {
     selectedCardId: 0,
     firstId: 1,
     lastId: 12,
+    selectedType: '',
 }
 
 const reducer = (state = initialState, { type, payload }) => {
@@ -27,7 +28,13 @@ const reducer = (state = initialState, { type, payload }) => {
                 firstId: firstId + 12,
                 lastId: lastId + 12,
                 selectedCardId: 0,
+                selectedType: '',
             };
+        case FILTER_BY_TYPE:
+            return {
+                ...state,
+                selectedType: payload,
+            }
         default:
             return state;
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectCard } from '../../store/actions/actions'
+import { selectCard, filterByType } from '../../store/actions/actions'
 import { getPokemonPrimaryStat, getPokemonImage, getPokemponTypes } from '../utils/utils';
 import Item from '../Item/Item';
 
@@ -30,19 +30,22 @@ class PokeCard extends React.Component {
 
     render() {
         const { pokedex } = this.state;
-        const { selectCard, id } = this.props;
+        const { selectCard, id, filterByType, selectedType } = this.props;
         const itemProps = {
             pokedex,
             name: getPokemonPrimaryStat(pokedex, 'name'),
             image: getPokemonImage(pokedex),
             types: getPokemponTypes(pokedex),
             onClick: selectCard,
+            filterByType,
             id,
+            selectedType,
         }
         return (
             <>
                 {
                     this.props &&
+                    (selectedType === '' || ( itemProps && itemProps.types && itemProps.types.includes(selectedType))) &&
                     <Item {...itemProps} />
                 }
             </>
@@ -51,6 +54,6 @@ class PokeCard extends React.Component {
     
 }
 
-const mapStateToProps = ({ selectedCardId }) => ({ selectedCardId })
+const mapStateToProps = ({ selectedCardId, selectedType }) => ({ selectedCardId, selectedType })
 
-export default connect(mapStateToProps, { selectCard })(PokeCard)
+export default connect(mapStateToProps, { selectCard, filterByType })(PokeCard)
