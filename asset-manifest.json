@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/pokeapi-client/static/css/main.1d7839b9.chunk.css",
-    "main.js": "/pokeapi-client/static/js/main.fcf6475b.chunk.js",
-    "main.js.map": "/pokeapi-client/static/js/main.fcf6475b.chunk.js.map",
+    "main.css": "/pokeapi-client/static/css/main.6240a1bd.chunk.css",
+    "main.js": "/pokeapi-client/static/js/main.bd2cec5d.chunk.js",
+    "main.js.map": "/pokeapi-client/static/js/main.bd2cec5d.chunk.js.map",
     "runtime-main.js": "/pokeapi-client/static/js/runtime-main.82d954ef.js",
     "runtime-main.js.map": "/pokeapi-client/static/js/runtime-main.82d954ef.js.map",
     "static/css/2.64a99b10.chunk.css": "/pokeapi-client/static/css/2.64a99b10.chunk.css",
     "static/js/2.42d6d260.chunk.js": "/pokeapi-client/static/js/2.42d6d260.chunk.js",
     "static/js/2.42d6d260.chunk.js.map": "/pokeapi-client/static/js/2.42d6d260.chunk.js.map",
     "index.html": "/pokeapi-client/index.html",
-    "precache-manifest.12aecbe1c4006e72875c15257bcdf1cc.js": "/pokeapi-client/precache-manifest.12aecbe1c4006e72875c15257bcdf1cc.js",
+    "precache-manifest.23c0f64c8779ec1d01a49bde4676abc2.js": "/pokeapi-client/precache-manifest.23c0f64c8779ec1d01a49bde4676abc2.js",
     "service-worker.js": "/pokeapi-client/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/pokeapi-client/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.1d7839b9.chunk.css.map": "/pokeapi-client/static/css/main.1d7839b9.chunk.css.map"
+    "static/css/main.6240a1bd.chunk.css.map": "/pokeapi-client/static/css/main.6240a1bd.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.82d954ef.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.42d6d260.chunk.js",
-    "static/css/main.1d7839b9.chunk.css",
-    "static/js/main.fcf6475b.chunk.js"
+    "static/css/main.6240a1bd.chunk.css",
+    "static/js/main.bd2cec5d.chunk.js"
   ]
 }
