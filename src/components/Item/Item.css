@@ -28,6 +28,10 @@
     border-radius: 5px;
 }
 
+.item-types:hover {
+    border: 2px solid yellowgreen;
+}
+
 .item-types:first-of-type {
     margin-right: 1px;
 }

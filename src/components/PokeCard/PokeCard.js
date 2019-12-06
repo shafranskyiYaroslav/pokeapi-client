@@ -41,12 +41,14 @@ class PokeCard extends React.Component {
             id,
             selectedType,
         }
+        const isHidden = (selectedType !== '' || selectedType !== itemProps.selectedType) ? {display: 'none'} : {};
+
         return (
             <>
                 {
                     this.props &&
                     (selectedType === '' || ( itemProps && itemProps.types && itemProps.types.includes(selectedType))) &&
-                    <Item {...itemProps} />
+                    <Item {...itemProps} style={isHidden}/>
                 }
             </>
         )
